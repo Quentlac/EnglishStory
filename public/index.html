@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magna Movies</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <aside>
+  </aside>
+  <main>
+    <h1>Welcome to Magna movie !</h1>
+    <p>Imagine your are the main character, what did you do ?</p>
+
+    <textarea id="story-input" rows="10" cols="50" placeholder="Write your story here..."></textarea>
+
+    <button class="magic-btn" id="submit-btn">
+      <span class="btn-text">See what's happening</span>
+      <span class="btn-glow"></span>
+    </button>
+
+    <div class="loader-container" id="loader" style="display: none;">
+      <div class="magic-loader">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+      </div>
+      <p class="loader-text">Magic is happening...</p>
+    </div>
+
+    <div class="result-section" id="result-section" style="display: none;">
+      <div class="score-container">
+        <div class="gauge-wrapper">
+          <div class="gauge-label">World Sustainability Score</div>
+          <span class="gauge-value" id="gauge-value">0/100</span>
+          <div class="gauge">
+            <div class="gauge-fill" id="gauge-fill"></div>
+          </div>
+        </div>
+        <div class="trophy-container" id="trophy-container">
+          <span class="trophy" id="trophy">🏆</span>
+          <span class="trophy-label" id="trophy-label"></span>
+        </div>
+      </div>
+      
+      <div class="response-container" id="response">
+      </div>
+    </div>
+
+  </main>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
