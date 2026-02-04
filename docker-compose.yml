@@ -2,10 +2,11 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
+      - "4000:4000"
     environment:
       - NODE_ENV=production
-      - PORT=3000
+      - PORT=${PORT}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
     env_file:
       - .env
     restart: unless-stopped
