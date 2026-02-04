@@ -41,7 +41,7 @@ app.post('/api/thinking', async (req, res) => {
     const allMessages = [...messages, userMessage];
 
     const completion = await openai.chat.completions.create({
-      model: "gpt-5-nano",
+      model: "gpt-5-mini",
       messages: allMessages,
     });
 
